@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 // Register the listener with the Location Manager to receive location updates
                 int permissionCheck = ContextCompat.checkSelfPermission(MainActivity.this,
                         Manifest.permission.ACCESS_FINE_LOCATION);
-                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener); //Network provider es método de localización que utilizan el wifi, las redes móviles, etc
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener); //Network provider es método de localización que utilizan el wifi, las redes móviles, etc
             }
         });
 
